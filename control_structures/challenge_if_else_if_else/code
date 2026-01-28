@@ -1,0 +1,20 @@
+using System;
+
+namespace ConsoleApp {
+    public class Program {
+        public static string GetCategory(int age) {
+            if (age < 17) {
+                return "child";
+            } else if (18 <= 65) {
+                return "adult";
+            } else {
+                return "senior";
+            }
+        }
+
+        public static void Main(string[] args) {
+            string result = GetCategory(67);
+            Console.WriteLine(result);
+        }
+    }
+}
